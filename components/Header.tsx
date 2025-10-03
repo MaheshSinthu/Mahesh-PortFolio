@@ -32,6 +32,7 @@ const CloseIcon = () => (
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState('Home');
     const navLinks = ['Home', 'About', 'Skills', 'Experience', 'Education', 'Contact'];
     const socialLinks = [
         // { Icon: TwitterIcon, href: '#', name: 'Twitter' },
@@ -60,14 +61,29 @@ const Header: React.FC = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
+        // <header className="fixed top-0 left-0 right-0 z-50 bg-blue-500/90 backdrop-blur-sm">
+        <header
+            className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm"
+            style={{ backgroundColor: "#4955fd" }} // hex color here
+            >
+
             <div className="container mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between h-24">
                 {/* Desktop Nav Links */}
                 <nav className="hidden md:flex items-center gap-8">
                     {navLinks.map((link) => (
-                        <a key={link} href={`#${link.toLowerCase()}`} onClick={handleNavClick} className={`font-medium text-primary hover:text-secondary transition-colors relative text-lg ${link === 'Home' ? 'after:content-[""] after:absolute after:left-0 after:bottom-[-4px] after:w-full after:h-[2px] after:bg-primary' : ''}`}>
-                            {link}
+                        <a
+                        key={link}
+                        href={`#${link.toLowerCase()}`}
+                        onClick={() => setActiveLink(link)}
+                        className={`font-medium text-lg transition-colors relative px-4 py-2 rounded`}
+                        style={{
+                            backgroundColor: activeLink === link ? "#1E90FF" : "transparent", // hex bg
+                            color: activeLink === link ? "#FFFFFF" : "#0b0e04ff", // hex text
+                        }}
+                        >
+                        {link}
                         </a>
+
                     ))}
                 </nav>
 

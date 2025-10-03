@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
             {/* Text Content Section */}
             <div className="text-center lg:text-left">
                 <h1 className="text-5xl md:text-7xl font-black text-primary leading-tight mb-6">
-                    Hi, I’m <span className="text-secondary">Mahesh</span> — Full Stack Developer.
+                    Hi, I’m Mahesh — Full Stack Developer.
                 </h1>
                 <p className="text-lg md:text-xl text-secondary max-w-xl mx-auto lg:mx-0 mb-10">
                     I build scalable, high-performance web applications using Python, Django, Flask, FastAPI, and modern frontend frameworks like React.js & Angular.
@@ -77,7 +77,7 @@ const HeroSection: React.FC = () => {
             </div>
        </div>
        <CircularHireMe />
-       <LightbulbIcon />
+       {/* <LightbulbIcon /> */}
     </section>
   );
 };
