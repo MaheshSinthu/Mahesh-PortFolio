@@ -16,17 +16,17 @@ const ApplicationIcon = () => (
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-24 container mx-auto px-6 md:px-12 lg:px-24">
+    <section id="about" className="py-24 container-fluid mx-auto px-6 md:px-12 lg:px-24" style={{ backgroundColor: "#0e387a", color: "#9fafca" }}>
       <SectionTitle 
         title="WHO AM I?"
         subtitle="ABOUT US"
       />
       <div className="animate-fade-in-up text-center max-w-4xl mx-auto" style={{ animationDelay: '0.3s' }}>
-        <p className="text-secondary text-lg leading-relaxed mb-8">
+        <p className="text-lg leading-relaxed mb-8">
           Hi, I’m Mahesh. As a Full Stack Developer with over 3 years of experience, I specialize in designing and delivering scalable, high-performance web applications. My expertise spans front-end frameworks such as <span className="font-semibold">React.js, Angular, and TypeScript</span>, combined with strong back-end skills in <span className="font-semibold">Python, Django, Flask, FastAPI, MongoDB, PostgreSQL, and MySQL</span>. I excel at building robust APIs and integrating them seamlessly with modern front-end architectures. Beyond coding, I also bring experience in creating <span className="font-semibold">flow diagrams, business process diagrams, and technical documentation</span> to ensure clarity and efficiency across project lifecycles.
         </p>
 
-        <p className="text-secondary text-lg leading-relaxed mb-12">
+        <p className="text-lg leading-relaxed mb-12">
           I am passionate about translating business requirements into intuitive, user-centric applications while maintaining clean, maintainable code. With hands-on experience in <span className="font-semibold">API integration, cloud services (AWS), and cross-functional collaboration</span>, I consistently deliver solutions that are efficient, scalable, and aligned with organizational goals. By combining technical expertise with problem-solving skills, I aim to drive innovation and deliver impactful digital products that enhance user experience and business growth.
         </p>
 

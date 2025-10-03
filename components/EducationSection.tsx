@@ -43,7 +43,7 @@ const EducationSection: React.FC = () => {
   };
 
   return (
-    <section id="education" className="py-24 container mx-auto px-6 md:px-12 lg:px-24">
+    <section id="education" className="py-24 container-fluid mx-auto px-6 md:px-12 lg:px-24" style={{ backgroundColor: "#0e387a", color: "#9fafca" }}>
       <SectionTitle
         title="EDUCATION"
         subtitle="EDUCATION"

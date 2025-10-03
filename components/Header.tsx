@@ -64,7 +64,7 @@ const Header: React.FC = () => {
         // <header className="fixed top-0 left-0 right-0 z-50 bg-blue-500/90 backdrop-blur-sm">
         <header
             className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm"
-            style={{ backgroundColor: "#4955fd" }} // hex color here
+            style={{ backgroundColor: "#eaf1edff" }} // hex color here
             >
 
             <div className="container mx-auto px-6 md:px-12 lg:px-24 flex items-center justify-between h-24">
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
                         className={`font-medium text-lg transition-colors relative px-4 py-2 rounded`}
                         style={{
                             backgroundColor: activeLink === link ? "#1E90FF" : "transparent", // hex bg
-                            color: activeLink === link ? "#FFFFFF" : "#0b0e04ff", // hex text
+                            color: activeLink === link ? "#FFFFFF" : "#1f3f24ff", // hex text
                         }}
                         >
                         {link}

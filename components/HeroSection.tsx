@@ -40,10 +40,14 @@ const LightbulbIcon: React.FC = () => (
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="home" className="container mx-auto px-6 md:px-12 lg:px-24 min-h-screen flex items-center justify-center relative pt-24 md:pt-0">
+    <section 
+      id="home" 
+      className="container-fluid mx-auto px-6 md:px-12 lg:px-24 min-h-screen flex items-center justify-center relative pt-24 md:pt-0"
+      style={{ backgroundColor: "#efc8b1", color: "#514644" }}  // ✅ bg & text color set
+    >
        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 w-full animate-fade-in-up">
             {/* Image Section */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center pt-5">
                 <img 
                     src={Mahesh} 
                     alt="Developer Portrait" 
@@ -53,31 +57,33 @@ const HeroSection: React.FC = () => {
 
             {/* Text Content Section */}
             <div className="text-center lg:text-left">
-                <h1 className="text-5xl md:text-7xl font-black text-primary leading-tight mb-6">
+                <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
                     Hi, I’m Mahesh — Full Stack Developer.
                 </h1>
-                <p className="text-lg md:text-xl text-secondary max-w-xl mx-auto lg:mx-0 mb-10">
+                <p className="text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-10">
                     I build scalable, high-performance web applications using Python, Django, Flask, FastAPI, and modern frontend frameworks like React.js & Angular.
                 </p>
                 <div className="flex items-center justify-center lg:justify-start gap-6">
                     <a 
-                    href="/MS1.pdf"        // path to your PDF in public
-                    target="_blank"           // open in a new tab
-                    rel="noopener noreferrer" // security best practice
-                    className="inline-flex items-center gap-2 bg-primary text-background font-semibold py-3 px-6 rounded-lg text-lg hover:bg-gray-800 transition-colors shadow-lg"
+                      href="/MS1.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#6fc27c] text-[#0f4d19] font-semibold py-3 px-6 rounded-lg text-lg hover:bg-gray-800 transition-colors shadow-lg"
                     >
-                    <span>Resume</span>
-                    <ExternalLinkIcon className="w-5 h-5"/>
+                      <span>Resume</span>
+                      <ExternalLinkIcon className="w-5 h-5"/>
                     </a>
 
-                    <a href="#contact" className="font-semibold text-lg text-primary hover:text-secondary underline underline-offset-4">
+                    <a 
+                      href="#contact" 
+                      className="font-semibold text-lg underline underline-offset-4 hover:text-[#ffffff]"
+                    >
                         Contact
                     </a>
                 </div>
             </div>
        </div>
        <CircularHireMe />
-       {/* <LightbulbIcon /> */}
     </section>
   );
 };

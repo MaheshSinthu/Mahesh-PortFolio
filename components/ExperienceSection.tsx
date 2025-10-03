@@ -164,7 +164,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ item, isLast }) => {
 
 const ExperienceSection: React.FC = () => {
   return (
-    <section id="experience" className="py-24 bg-white">
+    <section id="experience" className="py-24" style={{ backgroundColor: "#0e387a", color: "#9fafca" }}>
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <SectionTitle
           title="WORK EXPERIENCE"
