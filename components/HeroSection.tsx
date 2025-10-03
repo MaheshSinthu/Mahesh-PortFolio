@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
                 </p>
                 <div className="flex items-center justify-center lg:justify-start gap-6">
                     <a 
-                      href="/MS1.pdf"
+                      href="/MaheshFSD.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#6fc27c] text-[#0f4d19] font-semibold py-3 px-6 rounded-lg text-lg hover:bg-gray-800 transition-colors shadow-lg"
